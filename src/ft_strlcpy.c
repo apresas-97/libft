@@ -6,7 +6,7 @@
 /*   By: apresas- <apresas-@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/12 16:17:55 by apresas-          #+#    #+#             */
-/*   Updated: 2024/11/12 16:56:31 by apresas-         ###   ########.fr       */
+/*   Updated: 2024/11/15 18:04:40 by apresas-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
 			*dst++ = *src++;
 		*dst = '\0';
 	}
-	return (src - og_src - 1);
+	return (ft_strlen(og_src));
 }
 
 /*

@@ -6,7 +6,7 @@
 /*   By: apresas- <apresas-@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/12 15:45:03 by apresas-          #+#    #+#             */
-/*   Updated: 2024/11/12 15:53:29 by apresas-         ###   ########.fr       */
+/*   Updated: 2024/11/15 19:47:50 by apresas-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,10 @@
 
 size_t	ft_strlen(const char *s)
 {
-	const char	*p = s;
+	size_t	len;
 
-	while (*p)
-		p++;
-	return (p - s);
+	len = 0;
+	while (s[len])
+		len++;
+	return (len);
 }
